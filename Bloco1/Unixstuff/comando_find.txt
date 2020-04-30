@@ -1,0 +1,2 @@
+./comando_find.txt
+./names.txt
