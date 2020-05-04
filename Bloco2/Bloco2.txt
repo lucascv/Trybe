@@ -1,0 +1,4 @@
+Neste Bloco aprendemos sobre o Git e Github e realizamos diversos 
+exercícios para praticar e fixar a matéria. 
+
+Realizamos pull request, push, add, commit, merge, entre outros.
