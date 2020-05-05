@@ -10,3 +10,5 @@ A lista abaixo contém um resumo dos exercícios:
 
 4- viagem_perfeita: Adicionar imagens, configurando seu tamanho e também o comentário (alt). TAGS: <img>, alt, width (altura), heigth (largura).
 
+5- jump_page: Neste exercício, precisamos adicionar links internos na página informada. Os ID's de referência já estavam determinados.
+
