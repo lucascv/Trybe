@@ -3,7 +3,7 @@
 
 let nota = 37;
 
-if (nota >= 90) {
+if (nota >= 90 && nota <= 100) {
     console.log("A");
 } else if (nota >= 80 && nota < 90) {
     console.log("B");
@@ -13,6 +13,8 @@ if (nota >= 90) {
     console.log("D");
 } else if (nota >= 50 && nota < 60) {
     console.log("E");
-} else {
+} else if (nota < 50 && nota >= 0) {
     console.log("F");
+} else {
+    console.log("Nota digitada é maior que 100 ou menor que 0.")
 }
