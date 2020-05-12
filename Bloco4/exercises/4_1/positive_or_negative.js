@@ -4,9 +4,9 @@
 let a = 0;
 
 if (a > 0) {
-    console.log("Positivo.")
+    console.log("Positive.")
 } else if (a < 0) {
-    console.log("Negativo.")
+    console.log("Negative.")
 } else {
     console.log("Zero.")
 }
