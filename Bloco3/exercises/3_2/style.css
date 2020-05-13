@@ -1,0 +1,59 @@
+#main-title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+#image {
+    border-radius: 50px;
+    width: 180px;
+    padding:6px;
+    background: #b1b1c3;
+}
+
+#photodescription {
+    font-family: sans-serif;
+    font-size: 0.8em;
+}
+
+body {
+    margin: 50px 50px;
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+.sub-titles {
+    border-radius: 50px;
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: #E2A500;
+    color: black;    
+    line-height: 1.3em;        
+}
+
+a {
+    color: whitesmoke;
+}
+
+.header {
+    margin: 50px 50px 0px 50px;
+    padding: 0px 30px 50px;
+}
+
+.imagedesc {
+    margin: 100px 100px;
+    
+}
+
+.desc {
+    margin: 50px 50px 50px 0px;
+    width: 600px;
+    min-height: 500px;
+    position: absolute;
+    top: 120px;
+    right: 150px;
+}
