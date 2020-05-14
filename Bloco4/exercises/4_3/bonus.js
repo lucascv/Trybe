@@ -16,7 +16,7 @@ if (n % 2 !== 0) {
             console.log(" ".repeat(spaceOut) + "*" + " ".repeat(spaceIn) + "*" + " ".repeat(spaceOut));
             spaceOut -= 1;
             spaceIn += 2;
-        } else if (i === n) {
+        } else {
             console.log(" ".repeat(spaceOut) + "*".repeat(i) + " ".repeat(spaceOut));
             spaceOut -= 1;
         }
