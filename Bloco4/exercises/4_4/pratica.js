@@ -153,13 +153,13 @@ console.log(lucroProduto(a, b, c).toFixed(2));
 function impostoRenda(salarioBruto) {
     let salarioBase = 0;
     if (salarioBruto <= 1556.94 && salarioBruto > 0) {
-        let salarioBase = salarioBruto * 0.92;
+        salarioBase = salarioBruto * 0.92;
     } else if (salarioBruto > 1556.94 && salarioBruto <= 2594.92) {
-        let salarioBase = salarioBruto * 0.91;
+        salarioBase = salarioBruto * 0.91;
     } else if (salarioBruto > 2594.92 && salarioBruto <= 5189.82) {
-        let salarioBase = salarioBruto * 0.89;
+        salarioBase = salarioBruto * 0.89;
     } else if (salarioBruto > 5189.82) {
-        let salarioBase = salarioBruto - 570.88;
+        salarioBase = salarioBruto - 570.88;
     } else {
         return "Salario informado é negativo"
     }
