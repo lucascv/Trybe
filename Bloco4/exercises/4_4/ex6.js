@@ -14,10 +14,10 @@ function verificaPalindromo(palavra) {
     }
   }
   if (diferencas > 0) {
-    return "NÃO é palíndromo."
+    return false
   }
   else {
-    return "Palíndromo."
+    return true
   }
 }
 
