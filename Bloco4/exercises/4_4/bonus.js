@@ -24,9 +24,9 @@ function transformaRomanoEmInteiro(numRomano) {
     }
   }
 
-  if (numInteiro[0] < numInteiro[numInteiro.length - 1]) {
+  if (numInteiro[numInteiro.length - 2] < numInteiro[numInteiro.length - 1]) {
     for (i = 0; i < numInteiro.length; i += 1) {
-      if (i === 0) {
+      if (i === numInteiro.length - 2) {
         sum -= numInteiro[i];
 
       }
@@ -50,3 +50,4 @@ console.log(transformaRomanoEmInteiro('IX'));
 console.log(transformaRomanoEmInteiro('IV'));
 console.log(transformaRomanoEmInteiro('CM'));
 console.log(transformaRomanoEmInteiro('A'));
+console.log(transformaRomanoEmInteiro('XIV'));
