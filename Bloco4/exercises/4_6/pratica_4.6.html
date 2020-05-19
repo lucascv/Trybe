@@ -78,7 +78,14 @@
       console.log(
         document.querySelector("#ultimonascido").parentElement.parentElement.nextElementSibling
       )
-      
+
+      // Remova todos os elementos da página, menos pai, elementoOndeVoceEsta e primeiroFilhoDoFilho.
+      document.getElementById("pai").removeChild(primeiroFilho);
+      document.getElementById("pai").removeChild(terceiroFilho);
+      document.getElementById("pai").removeChild(quartoEUltimoFilho);
+      document.getElementById("elementoOndeVoceEsta").removeChild(segundoEUltimoFilhoDoFilho);
+      // document.getElementById("pai").parentElement.parentElement.removeChild(paiDoPai);
+            
     </script>    
   </body>
 </html>
