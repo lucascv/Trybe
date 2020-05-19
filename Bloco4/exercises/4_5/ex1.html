@@ -47,25 +47,42 @@
         
         1. Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
         */
-        document.getElementsByTagName("p")[1].innerHTML = 'Me vejo trabalhando Home Office em uma empresa européia';
-        
-        // 2. Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe.
-        document.getElementsByClassName('main-content')[0].style.backgroundColor = 'green';
-
-        // 3. Crie uma função que mude a cor do quadrado vermelho para branco.
-        document.getElementsByClassName('center-content')[0].style.backgroundColor = 'white';
-
-        // 4. Crie uma função que corrija o texto da tag <h1>.
-        document.getElementsByClassName('title')[0].innerHTML = 'Exercício 4.5 - JavaScript';
-
-        // 5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
-        document.getElementsByClassName('p')[0].innerHTML = "TEXTO PADRÃO DO NOSSO SITE";
-        
-        // 6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
-        todosPes = document.getElementsByTagName('p')
-        for (i = 0; i < todosPes.length; i += 1) {
-          console.log(todosPes[i])
+        function ex1 () {
+          document.getElementsByTagName("p")[1].innerHTML = 'Me vejo trabalhando Home Office em uma grande empresa';
         }
+        // 2. Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe.
+        function ex2 () {
+          document.getElementsByClassName('main-content')[0].style.backgroundColor = 'green';
+        }
+        // 3. Crie uma função que mude a cor do quadrado vermelho para branco.
+        function ex3 () {
+          document.getElementsByClassName('center-content')[0].style.backgroundColor = 'white';
+        }
+        // 4. Crie uma função que corrija o texto da tag <h1>.
+        function ex4 () {
+          document.getElementsByClassName('title')[0].innerHTML = 'Exercício 4.5 - JavaScript';
+        }
+        // 5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+        function ex5 () {
+          let upper = document.getElementsByTagName('p');
+          for (i = 0; i < upper.length; i += 1) {
+            upper[i].style.textTransform = "uppercase";
+          }
+        }       
+        // 6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+        function ex6 () {
+          let paragrafos = document.getElementsByTagName('p');
+          for (let i = 0; i < paragrafos.length; i += 1) {
+            console.log(paragrafos[i]);
+          }
+        }
+
+        ex1 ();
+        ex2 ();
+        ex3 ();
+        ex4 ();
+        ex5 ();
+        ex6 ();
 
     </script>
   </body>
