@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Aula 4.6</title>
+  </head>
+  <body>
+    <div id="paiDoPai">
+      <div id="pai">
+        <div id="primeiroFilho"></div>
+        <div id="elementoOndeVoceEsta">
+          <div id="primeiroFilhoDoFilho"></div>
+          <div id="segundoEUltimoFilhoDoFilho"></div>
+        </div>
+        Atenção!
+        <div id="terceiroFilho"></div>
+        <div id="quartoEUltimoFilho"></div>
+      </div>
+    </div>
+    <script>
+      // Acesse o elemento elementoOndeVoceEsta.
+      console.log(
+        document.querySelector('#elementoOndeVoceEsta')
+      )
+      
+      // Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.
+      console.log(
+        document.querySelector('#elementoOndeVoceEsta').parentNode.style.color = "red"
+      )
+
+      // Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos 
+      // da aula anterior, como fazer isso?
+      document.getElementById("primeiroFilhoDoFilho").innerHTML = "Adicionando texto"
+
+      // Acesse o primeiroFilho a partir de pai.
+      primeiroFilho = document.querySelector("#pai").firstChild
+      console.log(primeiroFilho)
+
+      // Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta.
+      console.log(
+        document.querySelector("#elementoOndeVoceEsta").previousElementSibling
+      )
+
+      // Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta.
+      console.log(
+        document.querySelector("#elementoOndeVoceEsta").nextSibling
+      )
+
+      // Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta.
+      console.log(
+        document.querySelector("#elementoOndeVoceEsta").nextElementSibling
+      )
+
+      // Agora acesse o terceiroFilho a partir de pai.
+      filhos = document.querySelector("#pai").childNodes
+      console.log(filhos[2])
+      
+    </script>    
+  </body>
+</html>
