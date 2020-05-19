@@ -33,7 +33,7 @@
       document.getElementById("primeiroFilhoDoFilho").innerHTML = "Adicionando texto"
 
       // Acesse o primeiroFilho a partir de pai.
-      primeiroFilho = document.querySelector("#pai").firstChild
+      primeiroFilho = document.querySelector("#pai").firstElementChild
       console.log(primeiroFilho)
 
       // Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta.
@@ -52,7 +52,7 @@
       )
 
       // Agora acesse o terceiroFilho a partir de pai.
-      filhos = document.querySelector("#pai").childNodes
+      filhos = document.querySelector("#pai").children
       console.log(filhos[2])
 
       // Crie um irmão para elementoOndeVoceEsta.
@@ -69,13 +69,16 @@
 
       // Crie um filho para primeiroFilhoDoFilho.
       let filhoDoFilho = document.createElement("div");
-      filhoDoFilho.innerHTML = "id=filho do filho"
+      filhoDoFilho.innerHTML = "filho do filho";
+      filhoDoFilho.id = "ultimonascido";
 
       document.getElementById("primeiroFilhoDoFilho").appendChild(filhoDoFilho);
 
       // A partir desse filho criado, acesse terceiroFilho.
-
-
+      console.log(
+        document.querySelector("#ultimonascido").parentElement.parentElement.nextElementSibling
+      )
+      
     </script>    
   </body>
 </html>
