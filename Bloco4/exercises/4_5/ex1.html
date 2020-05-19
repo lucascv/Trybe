@@ -59,7 +59,13 @@
         document.getElementsByClassName('title')[0].innerHTML = 'Exercício 4.5 - JavaScript';
 
         // 5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+        document.getElementsByClassName('p')[0].innerHTML = "TEXTO PADRÃO DO NOSSO SITE";
+        
         // 6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+        todosPes = document.getElementsByTagName('p')
+        for (i = 0; i < todosPes.length; i += 1) {
+          console.log(todosPes[i])
+        }
 
     </script>
   </body>
