@@ -54,7 +54,28 @@
       // Agora acesse o terceiroFilho a partir de pai.
       filhos = document.querySelector("#pai").childNodes
       console.log(filhos[2])
-      
+
+      // Crie um irmão para elementoOndeVoceEsta.
+      let irmaoElementoOndeVoceEsta = document.createElement("div");
+      irmaoElementoOndeVoceEsta.innerHTML = "irmao do elemento";
+
+      document.getElementById("pai").appendChild(irmaoElementoOndeVoceEsta);
+
+      // Crie um filho para elementoOndeVoceEsta.
+      let filhoElementoOndeVoceEsta = document.createElement("div");
+      filhoElementoOndeVoceEsta.innerHTML = "filho do elemento";
+
+      document.getElementById("elementoOndeVoceEsta").appendChild(filhoElementoOndeVoceEsta);
+
+      // Crie um filho para primeiroFilhoDoFilho.
+      let filhoDoFilho = document.createElement("div");
+      filhoDoFilho.innerHTML = "id=filho do filho"
+
+      document.getElementById("primeiroFilhoDoFilho").appendChild(filhoDoFilho);
+
+      // A partir desse filho criado, acesse terceiroFilho.
+
+
     </script>    
   </body>
 </html>
