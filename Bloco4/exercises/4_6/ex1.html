@@ -99,7 +99,6 @@
       lista.id = "lista";
       document.querySelector(".right-content").appendChild(lista);
 
-      let elementoLista = document.createElement("li");
       let valoresLista = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 
       'nove', 'dez'];
 
@@ -110,6 +109,13 @@
       }
 
       incluirListaHtml(valoresLista);
+
+      // 9- Adicione 3 tags h3, todas sendo filhas do div criado no passo 2.
+      for (let i = 0; i < 3; i+=1) {
+        let h3 = document.createElement("h3");
+        document.querySelector(".main-content").appendChild(h3);
+      }
+      
       
     </script>
   </body>
