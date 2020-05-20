@@ -139,8 +139,24 @@
       document.querySelector(".center-content").parentElement.style.backgroundColor = "green";
 
       // 15- Remova os dois últimos elementos (nove e dez) da lista criada no passo 8.
+      function removeChildNodes(parent, elemento) {
+        let count = 0;
+        for (let child = parent.firstChild; child != null; child = child.nextSibling) {
+          if (child.innerHTML === elemento) {
+            let deletar = child;
+            parent.removeChild(deletar);
+            count++;
+          }
+          else {
+            count++;
+          }          
+        }
+        return count;
+      }
 
-
+      removeChildNodes(document.querySelector("#lista"), "nove");
+      removeChildNodes(document.querySelector("#lista"), "dez");
+      
     </script>
   </body>
 </html>
