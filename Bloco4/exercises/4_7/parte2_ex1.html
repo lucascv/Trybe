@@ -30,6 +30,7 @@
 		    </ol>  
       </div>
     </div>
+    <img id="image1" onmouseover="changeImg()" src="images/1.png">
     <script>
       
       function alerta() {
@@ -44,7 +45,9 @@
         alert("R$ " + (resultado.toFixed(2)) + " de desconto!");
       }
 
-      
+      function changeImg() {
+        document.querySelector("#image1").src = "images/2.png";
+      }
 
     </script>
   </body>
