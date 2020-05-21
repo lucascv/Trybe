@@ -11,10 +11,40 @@
     <script>
       let image = document.querySelector("img");
       image.style.left = "0px";
+      
+      /* Bonus 1
       function catWalk() {
-        image.style.left = (parseInt(image.style.left) + 10) + "px";
+        if (parseInt(image.style.left) > window.innerWidth) {
+          image.style.left = "0px";
+        }
+        else {
+          image.style.left = (parseInt(image.style.left) + 10) + "px";
+        }        
+      }      
+      
+      Bonus 2
+      let ida = true;
+
+      function catWalk() {        
+        if (parseInt(image.style.left) > window.innerWidth) {
+          ida = false;
+        }
+        if ((parseInt(image.style.left) <= 0)) {
+          ida = true;
+        }
+        if (ida) {
+          image.style.left = (parseInt(image.style.left) + 10) + "px";
+        }
+        else {
+          image.style.left = (parseInt(image.style.left) - 10) + "px";
+        }
       }
+      
       window.setInterval (catWalk, 50);
+      */ 
+      
+
+
     </script>
   </body>
 </html>
