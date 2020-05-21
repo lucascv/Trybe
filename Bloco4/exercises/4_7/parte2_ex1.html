@@ -30,7 +30,7 @@
 		    </ol>  
       </div>
     </div>
-    <img id="image1" onmouseover="changeImg()" src="images/1.png">
+    <img id="image1" onmouseover="changeImg()" onmouseout="returnImg()" src="images/1.png">
     <script>
       
       function alerta() {
@@ -45,14 +45,12 @@
         alert("R$ " + (resultado.toFixed(2)) + " de desconto!");
       }
 
-      function changeImg(event) {
-        let imgOriginal = document.querySelector("#image1").src;
-        if (imgOriginal === "http://127.0.0.1:5500/Bloco4/exercises/4_7/images/1.png") {
-          document.querySelector("#image1").src = "images/2.png";
-        }
-        else {
-          document.querySelector("#image1").src = "images/1.png";
-        }        
+      function changeImg() {
+        document.querySelector("#image1").src = "images/2.png";
+      }
+
+      function returnImg() {
+        document.querySelector("#image1").src = "images/1.png";
       }
 
     </script>
