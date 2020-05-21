@@ -1,3 +1,6 @@
+// salva os dados sem data de expiração. Os dados não serão removidos quando o browser for 
+// fechado, ou seja, eles ficarão disponíveis enquanto não forem explicitamente removidos.
+
 console.log(localStorage.length) // não possui nada salvo, então o retorno é o valor: 0
 localStorage.setItem("firsname", "Adam") //salva uma entrada com a key = "firstname" e value = "Adam"
 localStorage.setItem("lastname", "Smith") //salva uma entrada com a key = "lastname" e value = "Smith"
