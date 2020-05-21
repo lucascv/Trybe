@@ -11,8 +11,20 @@
     <script>
       let image = document.querySelector("img");
       image.style.left = "0px";
+
+      // Bonus 3
+      function catWalk() {
+        if (parseInt(image.style.left) >= (window.innerWidth/2)) {          
+          document.querySelector("img").src = "images/gato.gif";
+        }
+        else {
+          image.style.left = (parseInt(image.style.left) + 10) + "px";
+        }        
+      } 
+      window.setInterval (catWalk, 50);   
       
-      /* Bonus 1
+      /* 
+      Bonus 1
       function catWalk() {
         if (parseInt(image.style.left) > window.innerWidth) {
           image.style.left = "0px";
@@ -20,7 +32,8 @@
         else {
           image.style.left = (parseInt(image.style.left) + 10) + "px";
         }        
-      }      
+      } 
+      window.setInterval (catWalk, 50);     
       
       Bonus 2
       let ida = true;
