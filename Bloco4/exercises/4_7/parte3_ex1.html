@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "utf-8" />
+    <title> Caminhada pelos gatos </title>
+  </head>
+  <body>
+  
+    <img style="position: absolute;" src="http://www.anniemation.com/clip_art/images/cat-walk.gif">
+  
+    <script>
+      let image = document.querySelector("img");
+      image.style.left = "0px";
+
+      // Bonus 3
+      let metade = false;
+
+      function catWalk() {
+        if (parseInt(image.style.left) >= (window.innerWidth/2) && metade === false) { 
+          document.querySelector("img").src = "images/gato.gif"        
+          setTimeout(() => { (document.querySelector("img").src = "http://www.anniemation.com/clip_art/images/cat-walk.gif") }, 5000);
+          metade = true;
+        }
+        if (parseInt(image.style.left) >= (window.innerWidth/2) && metade === true) {
+          setTimeout(() => { (image.style.left = (parseInt(image.style.left) + 10) + "px") }, 5000);
+        }
+        else {
+          image.style.left = (parseInt(image.style.left) + 10) + "px";
+        }
+      } 
+      window.setInterval (catWalk, 50);       
+      
+      /* 
+      Bonus 1
+      function catWalk() {
+        if (parseInt(image.style.left) > window.innerWidth) {
+          image.style.left = "0px";
+        }
+        else {
+          image.style.left = (parseInt(image.style.left) + 10) + "px";
+        }        
+      } 
+      window.setInterval (catWalk, 50);     
+      
+      Bonus 2
+      let ida = true;
+
+      function catWalk() {        
+        if (parseInt(image.style.left) > window.innerWidth) {
+          ida = false;
+        }
+        if ((parseInt(image.style.left) <= 0)) {
+          ida = true;
+        }
+        if (ida) {
+          image.style.left = (parseInt(image.style.left) + 10) + "px";
+        }
+        else {
+          image.style.left = (parseInt(image.style.left) - 10) + "px";
+        }
+      }
+      
+      window.setInterval (catWalk, 50);
+      */ 
+      
+
+
+    </script>
+  </body>
+</html>
