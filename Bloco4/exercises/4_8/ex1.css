@@ -1,0 +1,27 @@
+body {
+    margin: 20px;
+    font-family: 'Text Me One', sans-serif;
+    font-size: 20px;
+}
+
+#cabecalho {
+    position: relative;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 22%;
+}
+
+.right-div {
+    text-align: center;
+    float: right;
+    width: 45%;
+    margin: 5px;
+}
+
+.left-div {
+    text-align: center;
+    float: left;
+    width: 45%;
+    margin: 5px;
+}
