@@ -1,5 +1,5 @@
 // Função que cria as opções do ComboBox com os estados do Brasil
-const function criarEstados() {
+function criarEstados() {
   let estadosBrasileiros = {
     ac: 'Acre',
     al: 'Alagoas',
@@ -28,5 +28,13 @@ const function criarEstados() {
     se: 'Sergipe',
     to: 'Tocantins',
     df: 'Distrito Federal'
-  }          
+  }   
+  for (index in estadosBrasileiros) {
+    const elemento = document.createElement('option');
+    elemento.value = index;
+    elemento.innerText = estadosBrasileiros[index];
+    document.querySelector('#estado').appendChild(elemento);
+  } 
 }
+
+criarEstados();
