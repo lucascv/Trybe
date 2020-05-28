@@ -25,14 +25,14 @@
         <button class="font-size-g">G</button>
       </div>
       <div id="espaco">Selecione espaçamento do texto: 
-        <button>P</button>
-        <button>M</button>
-        <button>G</button>
+        <button class="line-heightP">P</button>
+        <button class="line-heightM">M</button>
+        <button class="line-heightG">G</button>
       </div>
       <div id="tipo">Tipo da fonte: 
-        <button>Arial</button>
-        <button>Courier</button>
-        <button>Monospace</button>
+        <button class="arial">Arial</button>
+        <button class="courier">Courier</button>
+        <button class="monospace">Monospace</button>
       </div>
     </header>
     <section id="texto1">
@@ -102,10 +102,37 @@
         texto.classList.add(fonteEscolhida);
       });
       // Espaçamento entre as linhas do texto;
+      const espacoFonte = document.querySelector('#espaco');
+      espacoFonte.addEventListener('click', function (event) {
+        const texto = document.querySelector('body');
+        const listaTexto = texto.classList;
+        const fonteEscolhida = event.target.className;
+        for (let i = 0; i < listaTexto.length; i += 1) {
+          if (listaTexto[i] === 'line-heightP' || listaTexto[i] === 'line-heightM' || listaTexto[i] === 'line-heightG') {
+            texto.classList.remove(listaTexto[i]);
+          }
+        }
+        texto.classList.add(fonteEscolhida);
+      });
       // Tipo da fonte (Font family).
+      const tipoFonte = document.querySelector('#tipo');
+      tipoFonte.addEventListener('click', function (event) {
+        const texto = document.querySelector('body');
+        const listaTexto = texto.classList;
+        const fonteEscolhida = event.target.className;
+        for (let i = 0; i < listaTexto.length; i += 1) {
+          if (listaTexto[i] === 'arial' || listaTexto[i] === 'courier' || listaTexto[i] === 'monospace') {
+            texto.classList.remove(listaTexto[i]);
+          }
+        }
+        texto.classList.add(fonteEscolhida);
+      });
+      //Salvando e carregando dados do localStorage
+      let salvarData = function () {
+        const listaClasses = document.querySelector('body').classList;
+        console.log(listaClasses);
+      }
 
-    
-
-
+      document.onchange = salvarData;
   </script>
 </html>
