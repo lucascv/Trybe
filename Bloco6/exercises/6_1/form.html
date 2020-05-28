@@ -38,6 +38,29 @@
             <option selected="selected" value="">Selecione</option>
           </select>
         </div>
+        <div>
+          <p>Tipo de moradia</p>
+          <label for="apartamento"><input name="tipo-moradia" required="required" id="apartamento" value="ap" type="radio">Apartamento</label>
+          <label for="casa"><input name="tipo-moradia" required="required" id="casa" value="casa" type="radio">Casa</label>
+        </div>
+      </fieldset>
+      <fieldset>
+          <div>
+            <p>Resumo do Currículo</p>
+            <textarea id="resumo" name="resumo" maxlength="1000" required="required"></textarea>
+          </div>
+          <div>
+            <label for="cargo">Cargo</label>
+            <input id="cargo" name="cargo" type="text" maxlength="40" required="required">
+          </div>
+          <div>
+            <p>Descrição do Cargo</p>
+            <textarea id="desc-cargo" name="desc-cargo" maxlength="500" required="required"></textarea>
+          </div>
+          <div>
+            <label for="data">Data de Inicio</label>
+            <input id="data" name="data" type="date" required="required" placeholder="dd/mm/aaaa">
+          </div>
       </fieldset>
     </form>
   </body>
