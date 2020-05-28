@@ -38,3 +38,16 @@ function criarEstados() {
 }
 
 criarEstados();
+
+// Funcao do botao limpar
+btnLimpar = document.querySelector('#limpar');
+btnLimpar.addEventListener('click', function () {
+  elementosInput = document.querySelectorAll('input');
+  for (let i = 0; i < elementosInput.length; i += 1) {
+    elementosInput[i].value = '';
+  }
+  elementosText = document.querySelectorAll('textarea');
+  for (let i = 0; i < elementosText.length; i += 1) {
+    elementosText[i].value = '';
+  }
+});
