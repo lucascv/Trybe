@@ -1,7 +1,25 @@
+.right-div {
+  text-align: center;
+  float: right;
+  width: 45%;
+  margin: 5px;
+}
+
+.left-div {
+  text-align: center;
+  float: left;
+  width: 45%;
+  margin: 5px;
+}
+
 body {
-    margin: 20px;
-    font-family: 'Text Me One', sans-serif;
-    font-size: 20px;
+  font-family: 'Text Me One', sans-serif;
+  font-size: 20px;
+  margin: 20px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+
 }
 
 #cabecalho {
@@ -12,16 +30,153 @@ body {
     height: 22%;
 }
 
-.right-div {
-    text-align: center;
-    float: right;
-    width: 45%;
-    margin: 5px;
+.background-black {
+  background-color: black;
 }
 
-.left-div {
-    text-align: center;
-    float: left;
-    width: 45%;
-    margin: 5px;
+.background-white {
+  background-color: white;
+}
+
+.background-red {
+  background-color: red;
+}
+
+.background-blue {
+  background-color: blue;
+}
+
+.color-text-black {
+  color: black;
+}
+
+.color-text-white {
+  color: white;
+}
+
+.color-text-red {
+  color: red;
+}
+
+.color-text-blue {
+  color: blue;
+}
+
+.fontSizeP {
+  font-size: 10px;
+}
+
+.fontSizeM {
+ font-size: 20px;
+}
+
+.fontSizeG {
+  font-size: 30px;
+}
+
+.line-heightP {
+  line-height: 5px;
+}
+
+.line-heightM {
+  line-height: 10px;
+}
+
+.line-heightG {
+  line-height: 15px;
+}
+
+.font-family1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.font-family2 {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.font-family3 {
+  font-family: monospace;
+}
+
+.quadrado-preto {
+  border: white 1px solid;
+  cursor: pointer;
+  height: 15px;
+  left: 19%;
+  position: absolute;
+  top: 4%;
+  width: 15px;
+}
+
+.quadrado-branco {
+  border: white 1px solid;
+  cursor: pointer;
+  height: 15px;
+  left: 21%;
+  position: absolute;
+  top: 4%;
+  width: 15px;
+}
+
+.quadrado-vermelho {
+  border: white 1px solid;
+  cursor: pointer;
+  height: 15px;
+  left: 23%;
+  position: absolute;
+  top: 4%;
+  width: 15px;
+}
+
+.quadrado-azul {
+  border: white 1px solid;
+  cursor: pointer;
+  height: 15px;
+  left: 25%;
+  position: absolute;
+  top: 4%;
+  width: 15px;
+}
+
+.texto-preto {
+    border: white 1px solid;
+    cursor: pointer;
+    height: 15px;
+    left: 18%;
+    position: absolute;
+    top: 23%;
+    width: 15px;
+}
+
+.texto-branco {
+    background-color: white;
+    cursor: pointer;
+    border: white 1px solid;
+    height: 15px;
+    left: 20%;
+    position: absolute;
+    top: 23%;
+    width: 15px;
+}
+
+.texto-vermelho {
+    background-color: red;
+    cursor: pointer;
+    border: white 1px solid;
+    height: 15px;
+    left: 22%;
+    position: absolute;
+    top: 23%;
+    width: 15px;
+}
+
+.texto-azul {
+    background-color: blue;
+    cursor: pointer;
+    border: white 1px solid;
+    height: 15px;
+    left: 24%;
+    position: absolute;
+    top: 23%;
+    width: 15px;
 }

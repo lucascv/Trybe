@@ -7,11 +7,33 @@
   </head>
   <body>
     <header id="cabecalho">
-      <div>Selecione a cor de fundo: <input type="text" id="bg-color" autocomplete="off"></div>
-      <div>Selecione a cor do texto: <input type="text" id="text-color" autocomplete="off"></div>
-      <div>Selecione o tamanho da fonte: <input type="text" id="font-tamanho" autocomplete="off"></div>
-      <div>Selecione espaçamento do texto: <input type="text" id="font-space" autocomplete="off"></div>
-      <div>Tipo da fonte: <input type="text" id="font-style" autocomplete="off"></div>
+      <div id="fundo">Selecione a cor de fundo: 
+        <div class="quadrado-preto background-black"></div>
+        <div class="quadrado-branco background-white"></div>
+        <div class="quadrado-vermelho background-red"></div>
+        <div class="quadrado-azul background-blue"></div>
+      </div>
+      <div id="texto">Selecione a cor do texto:
+        <div class="texto-preto color-text-black"></div>
+        <div class="texto-branco color-text-white"></div>
+        <div class="texto-vermelho color-text-red"></div>
+        <div class="texto-azul color-text-blue"></div>
+      </div>
+      <div id="tamanho">Selecione o tamanho da fonte:
+        <button>P</button>
+        <button>M</button>
+        <button>G</button>
+      </div>
+      <div id="espaco">Selecione espaçamento do texto: 
+        <button>P</button>
+        <button>M</button>
+        <button>G</button>
+      </div>
+      <div id="tipo">Tipo da fonte: 
+        <button>Arial</button>
+        <button>Courier</button>
+        <button>Monospace</button>
+      </div>
     </header>
     <section id="texto1">
       <div class="left-div">
@@ -31,16 +53,46 @@
     </section>
   </body>
   <script>
-    window.onload = function () {
       // Cor de fundo da tela;
-      
+      const background = document.querySelector('#fundo');
+      background.addEventListener('click', function (event) {
+        const texto = document.querySelector('body');
+        const listaTexto = texto.classList;
+        const fundoEscolhido = event.target.classList;
+        for (let i = 0; i < listaTexto.length; i += 1) {
+          if (listaTexto[i] === 'background-black' || listaTexto[i] === 'background-white' || listaTexto[i] === 'background-red' || listaTexto[i] === 'background-blue') {
+            texto.classList.remove(listaTexto[i]);
+          }
+        }
+        for (let i = 0; i < fundoEscolhido.length; i += 1) {
+          if (fundoEscolhido[i] !== 'quadrado-preto' && fundoEscolhido[i] !== 'quadrado-branco' && fundoEscolhido[i] !== 'quadrado-vermelho' && fundoEscolhido[i] !== 'quadrado-azul') {
+            texto.classList.add(fundoEscolhido[i]);
+          }
+        }
+      })
       
       // Cor do texto;
+      const corTexto = document.querySelector('#texto');
+      corTexto.addEventListener('click', function (event) {
+        const texto = document.querySelector('body');
+        const listaTexto = texto.classList;
+        const fundoEscolhido = event.target.classList;
+        for (let i = 0; i < listaTexto.length; i += 1) {
+          if (listaTexto[i] === 'color-text-black' || listaTexto[i] === 'color-text-white' || listaTexto[i] === 'color-text-red' || listaTexto[i] === 'color-text-blue') {
+            texto.classList.remove(listaTexto[i]);
+          }
+        }
+        for (let i = 0; i < fundoEscolhido.length; i += 1) {
+          if (fundoEscolhido[i] !== 'texto-preto' && fundoEscolhido[i] !== 'texto-branco' && fundoEscolhido[i] !== 'texto-vermelho' && fundoEscolhido[i] !== 'texto-azul') {
+            texto.classList.add(fundoEscolhido[i]);
+          }
+        }
+      })
       // Tamanho da fonte;
       // Espaçamento entre as linhas do texto;
       // Tipo da fonte (Font family).
 
-    }
+    
 
 
   </script>
