@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Exercício 4.8</title>
+    <link href="ex1.css" rel="stylesheet">
+  </head>
+  <body>
+    <header id="cabecalho">
+      <div id="fundo">Selecione a cor de fundo: 
+        <div class="quadrado-preto background-black"></div>
+        <div class="quadrado-branco background-white"></div>
+        <div class="quadrado-vermelho background-red"></div>
+        <div class="quadrado-azul background-blue"></div>
+      </div>
+      <div id="texto">Selecione a cor do texto:
+        <div class="texto-preto color-text-black"></div>
+        <div class="texto-branco color-text-white"></div>
+        <div class="texto-vermelho color-text-red"></div>
+        <div class="texto-azul color-text-blue"></div>
+      </div>
+      <div id="tamanho">Selecione o tamanho da fonte:
+        <button class="font-size-p">P</button>
+        <button class="font-size-m">M</button>
+        <button class="font-size-g">G</button>
+      </div>
+      <div id="espaco">Selecione espaçamento do texto: 
+        <button class="line-heightP">P</button>
+        <button class="line-heightM">M</button>
+        <button class="line-heightG">G</button>
+      </div>
+      <div id="tipo">Tipo da fonte: 
+        <button class="arial">Arial</button>
+        <button class="courier">Courier</button>
+        <button class="monospace">Monospace</button>
+      </div>
+    </header>
+    <section id="texto1">
+      <div class="left-div">
+        <h1>O que é o Lorem Ipsum?</h1>
+          <p>
+            O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. Este texto não só sobreviveu 5 séculos, mas também o salto para a tipografia electrónica, mantendo-se essencialmente inalterada. Foi popularizada nos anos 60 com a disponibilização das folhas de Letraset, que continham passagens com Lorem Ipsum, e mais recentemente com os programas de publicação como o Aldus PageMaker que incluem versões do Lorem Ipsum.
+          </p>
+        <h1>De onde é que ele vem?</h1>
+          <p>Ao contrário da crença popular, o Lorem Ipsum não é simplesmente texto aleatório. Tem raízes numa peça de literatura clássica em Latim, de 45 AC, tornando-o com mais de 2000 anos. Richard McClintock, um professor de Latim no Colégio Hampden-Sydney, na Virgínia, procurou uma das palavras em Latim mais obscuras (consectetur) numa passagem Lorem Ipsum, e atravessando as cidades do mundo na literatura clássica, descobriu a sua origem. Lorem Ipsum vem das secções 1.10.32 e 1.10.33 do "de Finibus Bonorum et Malorum" (Os Extremos do Bem e do Mal), por Cícero, escrito a 45AC. Este livro é um tratado na teoria da ética, muito popular durante a Renascença. A primeira linha de Lorem Ipsum, "Lorem ipsum dolor sit amet..." aparece de uma linha na secção 1.10.32.<br><br>O pedaço mais habitual do Lorem Ipsum usado desde os anos 1500 é reproduzido abaixo para os interessados. As secções 1.10.32 e 1.10.33 do "de Finibus Bonorum et Malorum" do Cícero também estão reproduzidos na sua forma original, acompanhados pela sua tradução em Inglês, versões da tradução de 1914 por H. Rackham.</p>
+      </div>
+      <div class="right-div">
+        <h1>Porque é que o usamos?</h1>
+          <p>É um facto estabelecido de que um leitor é distraído pelo conteúdo legível de uma página quando analisa a sua mancha gráfica. Logo, o uso de Lorem Ipsum leva a uma distribuição mais ou menos normal de letras, ao contrário do uso de "Conteúdo aqui, conteúdo aqui", tornando-o texto legível. Muitas ferramentas de publicação electrónica e editores de páginas web usam actualmente o Lorem Ipsum como o modelo de texto usado por omissão, e uma pesquisa por "lorem ipsum" irá encontrar muitos websites ainda na sua infância. Várias versões têm evoluído ao longo dos anos, por vezes por acidente, por vezes propositadamente (como no caso do humor).</p>
+        <h1>Onde posso arranjar algum?</h1>
+          <p>Existem muitas variações das passagens do Lorem Ipsum disponíveis, mas a maior parte sofreu alterações de alguma forma, pela injecção de humor, ou de palavras aleatórias que nem sequer parecem suficientemente credíveis. Se vai usar uma passagem do Lorem Ipsum, deve ter a certeza que não contém nada de embaraçoso escondido no meio do texto. Todos os geradores de Lorem Ipsum na Internet acabam por repetir porções de texto pré-definido, como necessário, fazendo com que este seja o primeiro verdadeiro gerador na Internet. Usa um dicionário de 200 palavras em Latim, combinado com uma dúzia de modelos de frases, para gerar Lorem Ipsum que pareçam razoáveis. Desta forma, o Lorem Ipsum gerado é sempre livre de repetição, ou de injecção humorística, etc.</p>
+      </div>
+    </section>
+  </body>
+  <script>
+      // Cor de fundo da tela;
+      const background = document.querySelector('#fundo');
+      background.addEventListener('click', function (event) {
+        const texto = document.querySelector('body');
+        const listaTexto = texto.classList;
+        const fundoEscolhido = event.target.classList;
+        for (let i = 0; i < listaTexto.length; i += 1) {
+          if (listaTexto[i] === 'background-black' || listaTexto[i] === 'background-white' || listaTexto[i] === 'background-red' || listaTexto[i] === 'background-blue') {
+            texto.classList.remove(listaTexto[i]);
+          }
+        }
+        for (let i = 0; i < fundoEscolhido.length; i += 1) {
+          if (fundoEscolhido[i] !== 'quadrado-preto' && fundoEscolhido[i] !== 'quadrado-branco' && fundoEscolhido[i] !== 'quadrado-vermelho' && fundoEscolhido[i] !== 'quadrado-azul') {
+            texto.classList.add(fundoEscolhido[i]);
+          }
+        }
+      });
+      
+      // Cor do texto;
+      const corTexto = document.querySelector('#texto');
+      corTexto.addEventListener('click', function (event) {
+        const texto = document.querySelector('body');
+        const listaTexto = texto.classList;
+        const fundoEscolhido = event.target.classList;
+        for (let i = 0; i < listaTexto.length; i += 1) {
+          if (listaTexto[i] === 'color-text-black' || listaTexto[i] === 'color-text-white' || listaTexto[i] === 'color-text-red' || listaTexto[i] === 'color-text-blue') {
+            texto.classList.remove(listaTexto[i]);
+          }
+        }
+        for (let i = 0; i < fundoEscolhido.length; i += 1) {
+          if (fundoEscolhido[i] !== 'texto-preto' && fundoEscolhido[i] !== 'texto-branco' && fundoEscolhido[i] !== 'texto-vermelho' && fundoEscolhido[i] !== 'texto-azul') {
+            texto.classList.add(fundoEscolhido[i]);
+          }
+        }
+      });
+      // Tamanho da fonte;
+      const tamanhoFonte = document.querySelector('#tamanho');
+      tamanhoFonte.addEventListener('click', function (event) {
+        const texto = document.querySelector('body');
+        const listaTexto = texto.classList;
+        const fonteEscolhida = event.target.className;
+        for (let i = 0; i < listaTexto.length; i += 1) {
+          if (listaTexto[i] === 'font-size-p' || listaTexto[i] === 'font-size-m' || listaTexto[i] === 'font-size-g') {
+            texto.classList.remove(listaTexto[i]);
+          }
+        }
+        texto.classList.add(fonteEscolhida);
+      });
+      // Espaçamento entre as linhas do texto;
+      const espacoFonte = document.querySelector('#espaco');
+      espacoFonte.addEventListener('click', function (event) {
+        const texto = document.querySelector('body');
+        const listaTexto = texto.classList;
+        const fonteEscolhida = event.target.className;
+        for (let i = 0; i < listaTexto.length; i += 1) {
+          if (listaTexto[i] === 'line-heightP' || listaTexto[i] === 'line-heightM' || listaTexto[i] === 'line-heightG') {
+            texto.classList.remove(listaTexto[i]);
+          }
+        }
+        texto.classList.add(fonteEscolhida);
+      });
+      // Tipo da fonte (Font family).
+      const tipoFonte = document.querySelector('#tipo');
+      tipoFonte.addEventListener('click', function (event) {
+        const texto = document.querySelector('body');
+        const listaTexto = texto.classList;
+        const fonteEscolhida = event.target.className;
+        for (let i = 0; i < listaTexto.length; i += 1) {
+          if (listaTexto[i] === 'arial' || listaTexto[i] === 'courier' || listaTexto[i] === 'monospace') {
+            texto.classList.remove(listaTexto[i]);
+          }
+        }
+        texto.classList.add(fonteEscolhida);
+      });
+      //Salvando e carregando dados do localStorage
+      let salvarData = function () {
+        const listaClasses = document.querySelector('body').classList;
+        console.log(listaClasses);
+      }
+
+      document.onchange = salvarData;
+  </script>
+</html>
