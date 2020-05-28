@@ -20,9 +20,9 @@
         <div class="texto-azul color-text-blue"></div>
       </div>
       <div id="tamanho">Selecione o tamanho da fonte:
-        <button>P</button>
-        <button>M</button>
-        <button>G</button>
+        <button class="font-size-p">P</button>
+        <button class="font-size-m">M</button>
+        <button class="font-size-g">G</button>
       </div>
       <div id="espaco">Selecione espaçamento do texto: 
         <button>P</button>
@@ -69,7 +69,7 @@
             texto.classList.add(fundoEscolhido[i]);
           }
         }
-      })
+      });
       
       // Cor do texto;
       const corTexto = document.querySelector('#texto');
@@ -87,8 +87,20 @@
             texto.classList.add(fundoEscolhido[i]);
           }
         }
-      })
+      });
       // Tamanho da fonte;
+      const tamanhoFonte = document.querySelector('#tamanho');
+      tamanhoFonte.addEventListener('click', function (event) {
+        const texto = document.querySelector('body');
+        const listaTexto = texto.classList;
+        const fonteEscolhida = event.target.className;
+        for (let i = 0; i < listaTexto.length; i += 1) {
+          if (listaTexto[i] === 'font-size-p' || listaTexto[i] === 'font-size-m' || listaTexto[i] === 'font-size-g') {
+            texto.classList.remove(listaTexto[i]);
+          }
+        }
+        texto.classList.add(fonteEscolhida);
+      });
       // Espaçamento entre as linhas do texto;
       // Tipo da fonte (Font family).
 

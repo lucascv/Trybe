@@ -62,15 +62,15 @@ body {
   color: blue;
 }
 
-.fontSizeP {
+.font-size-p {
   font-size: 10px;
 }
 
-.fontSizeM {
+.font-size-m {
  font-size: 20px;
 }
 
-.fontSizeG {
+.font-size-g {
   font-size: 30px;
 }
 
@@ -179,4 +179,8 @@ body {
     position: absolute;
     top: 23%;
     width: 15px;
+}
+
+button {
+  cursor: pointer;
 }
