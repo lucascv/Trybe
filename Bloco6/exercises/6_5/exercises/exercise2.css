@@ -5,3 +5,51 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+body {
+  background-color: darkolivegreen;
+  margin-top: 0px;
+}
+
+header {
+  text-align: center;
+  background-color: lightgrey;
+  padding: 15px;
+}
+
+header p {
+  font-size: 1.3em;
+}
+
+.lista {
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+p, li {
+  font-size: 1.1em;
+}
+
+.main-content {
+  margin: 10px;
+}
+
+.titulo {
+  margin-top: 0px;
+}
+
+footer {
+  background-color: lightgrey;
+  padding: 0 15px 15px;
+}
+
+.rodape {
+  margin-bottom: 0px;
+}
