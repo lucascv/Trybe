@@ -53,3 +53,36 @@ footer {
 .rodape {
   margin-bottom: 0px;
 }
+
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+  header {
+    background-color: lightyellow;
+  }
+
+  .titulo {
+    font-size: 1.7em;
+  }
+
+  .lista {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .lista li {
+    border: limegreen 1px solid;
+    padding: 10px;
+  }
+
+  body {
+    background-color: mediumpurple;
+  }
+
+  h1, h2, h3 {
+    font-size: 25px;
+  }
+
+  footer {
+    padding: 5px;
+    background-color: lightyellow;
+  }
+}
