@@ -1,0 +1,88 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: darkolivegreen;
+  margin-top: 0px;
+}
+
+header {
+  text-align: center;
+  background-color: lightgrey;
+  padding: 15px;
+}
+
+header p {
+  font-size: 1.3em;
+}
+
+.lista {
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+p, li {
+  font-size: 1.1em;
+}
+
+.main-content {
+  margin: 10px;
+}
+
+.titulo {
+  margin-top: 0px;
+}
+
+footer {
+  background-color: lightgrey;
+  padding: 0 15px 15px;
+}
+
+.rodape {
+  margin-bottom: 0px;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+  header {
+    background-color: lightyellow;
+  }
+
+  .titulo {
+    font-size: 1.7em;
+  }
+
+  .lista {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .lista li {
+    border: limegreen 1px solid;
+    padding: 10px;
+  }
+
+  body {
+    background-color: mediumpurple;
+  }
+
+  h1, h2, h3 {
+    font-size: 25px;
+  }
+
+  footer {
+    padding: 5px;
+    background-color: lightyellow;
+  }
+}

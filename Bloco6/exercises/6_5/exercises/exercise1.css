@@ -1,0 +1,56 @@
+body {
+  font-size: 1.5em;
+  margin: 0 20px;
+}
+
+h1 {
+  font-size: 1.2em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+img {
+	max-width: 100%;
+}
+
+figure {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: tan;
+    font-size: 1.3em;
+    margin: 20px 40px;
+  }
+
+  h1, h2 {
+    font-size: 1.5em;
+  }
+
+  .figuras {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  figure {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  body {
+    background-color: teal;
+    font-size: 1.5em;
+    margin: 40px 80px;
+    max-width: 1200px;
+  }
+
+  h1, h2 {
+    font-size: 1.7em;
+  }
+}
