@@ -71,8 +71,8 @@ console.log(allLessons);
 
 const funcao6 = (objeto) => {
   let soma = 0;
-  for (index in allLessons) {
-    soma += allLessons[index].numeroEstudantes;
+  for (index in objeto) {
+    soma += objeto[index].numeroEstudantes;
   }
   return soma;
 }
@@ -101,3 +101,26 @@ const funcao8 = (objeto, chave, valor) => {
 }
 
 console.log(funcao8(lesson1, 'professor', 'João'));
+
+// Bônus 1 - Crie uma função para contar quantos estudantes assistiram às aulas de Matemática. 
+// Use o objeto criado no exercício 5.
+
+const funcaoBonus1 = (objeto, nomeMateria) => {
+  let soma = 0;
+  for (index in objeto) {
+    if (objeto[index].materia === nomeMateria) {
+      soma += objeto[index].numeroEstudantes;
+    }
+  }
+  return soma;
+}
+
+console.log(funcaoBonus1(allLessons, 'Matemática'));
+
+// Bônus 2 - Crie uma função que deverá retornar um objeto que representa o relatório do 
+// professor ou professora, as aulas que ele ou ela ministrou e o número total de estudantes. 
+// Use o objeto criado no exercício 5:
+
+const funcaoBonus2 = (objeto, nomeProfessor) => {
+  
+}
