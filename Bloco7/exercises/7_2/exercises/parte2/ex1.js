@@ -87,3 +87,17 @@ const funcao7 = (objeto, posicao) => {
 }
 
 console.log(funcao7(lesson1, 0));
+
+// 8- Crie uma função que verifique se o par (chave / valor) existe na função. Essa função 
+// deve possuir três parâmetros, sendo eles: o objeto, o nome da chave e o valor da chave.
+
+const funcao8 = (objeto, chave, valor) => {
+  if (objeto[chave] === valor) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+
+console.log(funcao8(lesson1, 'professor', 'João'));
