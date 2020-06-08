@@ -28,3 +28,16 @@ const funcao = (objeto, chave, valor) => {
 }
 
 console.log(funcao(lesson2, 'turno', 'manhã'));
+
+// Crie uma função para listar as keys de um objeto. Essa função deve receber um objeto como 
+// parâmetro.
+
+const funcao1 = (objeto) => {
+  const chaves = Object.keys(objeto);
+  return chaves;
+}
+
+console.log(funcao1(lesson2));
+
+// Crie uma função para mostrar o tamanho de um objeto.
+
