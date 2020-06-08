@@ -79,4 +79,11 @@ const funcao6 = (objeto) => {
 
 console.log(funcao6(allLessons));
 
-// 7- 
+// 7- Crie uma função que obtenha o valor da chave de acordo com a sua posição no objeto. 
+
+const funcao7 = (objeto, posicao) => {
+  const valores = Object.values(objeto);
+  return valores[posicao];
+}
+
+console.log(funcao7(lesson1, 0));
