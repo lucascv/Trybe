@@ -68,3 +68,15 @@ console.log(allLessons);
 
 // 6- Usando o objeto criado no exercício 5, crie uma função que retorne o número total de 
 // estudantes em todas as aulas.
+
+const funcao6 = (objeto) => {
+  let soma = 0;
+  for (index in allLessons) {
+    soma += allLessons[index].numeroEstudantes;
+  }
+  return soma;
+}
+
+console.log(funcao6(allLessons));
+
+// 7- 
