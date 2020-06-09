@@ -122,5 +122,20 @@ console.log(funcaoBonus1(allLessons, 'Matemática'));
 // Use o objeto criado no exercício 5:
 
 const funcaoBonus2 = (objeto, nomeProfessor) => {
+  const relatorio = {};
+  relatorio.professor = nomeProfessor;
+  let aula = [];
+  let estudantes = 0;
+  for (index in objeto) {
+    if (objeto[index].professor === nomeProfessor) {
+      aula.push(objeto[index].materia);
+      estudantes += objeto[index].numeroEstudantes;
+    }
+  }
+  relatorio.aulas = aula;
+  relatorio.numeroEstudantes = estudantes;
   
+  return relatorio;
 }
+
+console.log(funcaoBonus2(allLessons, 'Maria Clara'));
