@@ -1,5 +1,7 @@
+let frase = '';
+
 const function1 = (string) => {
-  const frase = `Tryber ${string} aqui`;
+  frase = `Tryber ${string} aqui`;
   return frase;
 };
 
@@ -8,7 +10,11 @@ console.log(function1('bebeto'));
 const skills = ['javascript', 'html', 'css', 'excel', 'trade'];
 
 const function2 = (frase) => {
-  
+  console.log(frase);
+  console.log('Minhas cinco principais habilidades são:');
+  for (index in skills) {
+    console.log(`- ${skills[index]}`);
+  }
 };
 
-console.log(function2);
+function2(frase);
