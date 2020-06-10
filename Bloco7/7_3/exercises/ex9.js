@@ -8,4 +8,4 @@ function change(param) {
 
 // implemente seus testes aqui
 
-assert.ok(change('teste'), false);
+assert.ok(change(true) === false);
