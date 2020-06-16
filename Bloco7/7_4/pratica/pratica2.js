@@ -33,3 +33,4 @@ assert.deepEqual(funcao1(0), []);
 assert.deepEqual(funcao1(1), []);
 assert.deepEqual(funcao1(2), [2]);
 assert.deepEqual(funcao1(10), [2, 3, 5, 7]);
+assert.deepEqual(funcao1(11), [2, 3, 5, 7, 11]);
