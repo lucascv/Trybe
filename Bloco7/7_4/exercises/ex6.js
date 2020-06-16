@@ -34,4 +34,4 @@ const result = 'D1y2n3';
 const assert = require('assert');
 
 assert.strictEqual(typeof removeVowels, 'function');
-assert.strictEqual(removeVowels('Dayane'), 'D1y2n3');
+assert.strictEqual(removeVowels(parameter), result);
