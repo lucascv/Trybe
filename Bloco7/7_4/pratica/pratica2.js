@@ -18,14 +18,18 @@ function funcao1(n) {
         primos.push(i);
         primo = 0;
       }
+      else {
+        primo = 0;
+      }
     }
     return primos;
   }
 }
 
-
 const assert = require('assert');
 
 assert.strictEqual(typeof(funcao1), 'function');
-assert.strictEqual(funcao1(0), []);
-assert.strictEqual(funcao1(1), []);
+assert.deepEqual(funcao1(0), []);
+assert.deepEqual(funcao1(1), []);
+assert.deepEqual(funcao1(2), [2]);
+assert.deepEqual(funcao1(10), [2, 3, 5, 7]);
