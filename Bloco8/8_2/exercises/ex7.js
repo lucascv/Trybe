@@ -63,20 +63,36 @@ const books = [
   },
 ];
 
-const expected_result = {
-  author: {
-    birthYear: 1948,
-    name: 'George R. R. Martin'
+const expected_result = [
+  {
+    age: 31,
+    author: 'Isaac Asimov'
   },
-  genre: 'Fantasia',
-  id: 1,
-  name: 'As Crônicas de Gelo e Fogo',
-  releaseYear: 1991
-};
+  {
+    age: 38,
+    author: 'H. P. Lovecraft'
+  },
+  {
+    age: 39,
+    author: 'Stephen King'
+  },
+  {
+    age: 43,
+    author: 'George R. R. Martin'
+  },
+  {
+    age: 45,
+    author: 'Frank Herbert'
+  },
+  {
+    age: 62,
+    author: 'J. R. R. Tolkien'
+  }
+];
 
-function longestNamedBook() {
+function nameAndAge() {
   // escreva seu código aqui
-  return books.reduce((book, bookTwo) => book.name.length > bookTwo.name.length ? book : bookTwo);
+  return books.map(book => {`${book.}`})
 }
 
-assert.deepEqual(longestNamedBook(), expected_result);
+assert.deepEqual(nameAndAge(), expected_result);
