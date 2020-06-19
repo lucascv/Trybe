@@ -19,8 +19,7 @@ const ships = [
 
 // escreva shipLength abaixo
 
-const shipLength = navio => {
-  const {name, length, measurementUnit = 'meters'} = navio;
+const shipLength = ({name, length, measurementUnit = 'meters'}) => {
   return `${name} is ${length} ${measurementUnit} long`;
 }
 
