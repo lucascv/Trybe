@@ -6,8 +6,7 @@ const chiron = ["Chiron", "Bugatti", 2016]
 
 // escreva toObject abaixo
 
-const toObject = carro => {
-  [nome, marca, ano] = carro;
+const toObject = ([nome, marca, ano]) => {
   return {name: nome, brand: marca, year: ano};
 };
 
