@@ -1,5 +1,6 @@
 const ex1 = require('./ex1')
 const ex2 = require('./ex2')
+const ex3 = require('./ex3')
 
 describe('ex1', () => {
   test('soma 4 e 5 para dar 9', () => {
@@ -24,5 +25,15 @@ describe('ex2', () => {
 
   test('myIndexOf([1, 2, 3, 4], 5) retorna o valor esperado', () => {
     expect(ex2([1, 2, 3, 4], 5)).toBe(-1);
+  })
+})
+
+describe('ex3', () => {
+  test('mySum([1, 2, 3, 4]) retorna o valor 10', () => {
+    expect(ex3([1, 2, 3, 4])).toBe(10);
+  })
+
+  test('mySum([1, -2, -3, 4]) retorna o valor esperado', () => {
+    expect(ex3([1, -2, -3, 4])).toBe(0);
   })
 })

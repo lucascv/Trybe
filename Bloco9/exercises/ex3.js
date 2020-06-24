@@ -19,3 +19,5 @@ assert.equal(mySum([1, 2, 3, 4]), 10);
 // 2- Teste se a chamada mySum([1, -2, -3, 4]) retorna o valor esperado
 
 assert.equal(mySum([1, -2, -3, 4]), 0);
+
+module.exports = mySum
