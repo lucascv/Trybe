@@ -1,13 +1,14 @@
-const ex1 = require('./ex1')
-const ex2 = require('./ex2')
-const ex3 = require('./ex3')
-const ex4 = require('./ex4')
-const ex5 = require('./ex5')
-const ex6 = require('./ex6')
-const ex7 = require('./ex7')
-const ex8 = require('./ex8')
-const { obj1, obj2, obj3 } = require('./ex10')
-const ex11 = require('./ex11')
+const ex1 = require('./ex1');
+const ex2 = require('./ex2');
+const ex3 = require('./ex3');
+const ex4 = require('./ex4');
+const ex5 = require('./ex5');
+const ex6 = require('./ex6');
+const ex7 = require('./ex7');
+const ex8 = require('./ex8');
+const { obj1, obj2, obj3 } = require('./ex10');
+const ex11 = require('./ex11');
+const fizzBuzz = require('./bonus1');
 
 
 describe('ex1', () => {
@@ -129,5 +130,25 @@ describe('ex11', () => {
 
   test('Testa se a função retorna false quando parametros forem 5 e 10', () => {
     expect(ex11(5, 10)).toEqual(false);
+  });
+})
+
+describe('bonus1', () => {
+  test('fizzBuzz function is defined', () => {
+    expect(fizzBuzz).toBeDefined();
+  });
+  
+  test('Calling fizzbuzz with `5` prints out 5 statements', () => {
+    fizzBuzz(5);
+  
+    expect(console.log.mock.calls.length).toEqual(5);
+  });
+   
+  beforeEach(() => {
+    jest.spyOn(console, 'log');
+  });
+  
+  afterEach(() => {
+    console.log.mockRestore();
   });
 })
