@@ -9,6 +9,7 @@ const ex8 = require('./ex8');
 const { obj1, obj2, obj3 } = require('./ex10');
 const ex11 = require('./ex11');
 const fizzBuzz = require('./bonus1');
+const palindrome = require('./bonus2');
 
 
 describe('ex1', () => {
@@ -143,12 +144,46 @@ describe('bonus1', () => {
   
     expect(console.log.mock.calls.length).toEqual(5);
   });
-   
+
   beforeEach(() => {
     jest.spyOn(console, 'log');
   });
   
   afterEach(() => {
     console.log.mockRestore();
+  });
+})
+
+describe('bonus2', () => {
+  test('palindrome function is defined', () => {
+    expect(typeof palindrome).toEqual('function');
+  });
+  
+  test('"aba" is a palindrome', () => {
+    expect(palindrome('aba')).toBeTruthy();
+  });
+  
+  test('" aba" is not a palindrome', () => {
+    expect(palindrome(' aba')).toBeFalsy();
+  });
+  
+  test('"aba " is not a palindrome', () => {
+    expect(palindrome('aba ')).toBeFalsy();
+  });
+  
+  test('"greetings" is not a palindrome', () => {
+    expect(palindrome('greetings')).toBeFalsy();
+  });
+  
+  test('"1000000001" a palindrome', () => {
+    expect(palindrome('1000000001')).toBeTruthy();
+  });
+  
+  test('"Fish hsif" is not a palindrome', () => {
+    expect(palindrome('Fish hsif')).toBeFalsy();
+  });
+  
+  test('"pennep" a palindrome', () => {
+    expect(palindrome('pennep')).toBeTruthy();
   });
 })
