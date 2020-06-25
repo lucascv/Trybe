@@ -3,6 +3,12 @@ const ex2 = require('./ex2')
 const ex3 = require('./ex3')
 const ex4 = require('./ex4')
 const ex5 = require('./ex5')
+const ex6 = require('./ex6')
+const ex7 = require('./ex7')
+const ex8 = require('./ex8')
+const { obj1, obj2, obj3 } = require('./ex10')
+const ex11 = require('./ex11')
+
 
 describe('ex1', () => {
   test('soma 4 e 5 para dar 9', () => {
@@ -72,4 +78,56 @@ describe('ex5', () => {
   });
 })
 
+describe('ex6', () => {
+  test('Função retorna "fizzbuzz" quando parametro é divisivel por 3 e 5', () => {
+    expect(ex6(15)).toEqual("fizzbuzz");
+  });
 
+  test('Função retorna "fizz" quando parametro é divisivel apenas por 3', () => {
+    expect(ex6(6)).toEqual('fizz');
+  });
+
+  test('Função retorna "buzz" quando parametro é divisivel apenas por 5', () => {
+    expect(ex6(10)).toEqual('buzz');
+  });
+
+  test('Função retorna o próprio parametro quando não é divisivel por 3 e 5', () => {
+    expect(ex6(8)).toBe(8);
+  });
+
+  test('Testa se retorna false quando parametro não é um número', () => {
+    expect(ex6('teste')).toEqual(false);
+  });
+})
+
+describe('ex7', () => {
+  test('Teste se uma variável foi definida', () => {
+    expect(typeof ex7).not.toBe('undefined');
+  });
+})
+
+describe('ex8', () => {
+  test('Teste se a função foi definida', () => {
+    expect(typeof ex8).toBe('function');
+  });
+})
+
+describe('ex10', () => {
+  test('Verificar se os dois objetos são idênticos', () => {
+    expect(obj1).toEqual(obj2);
+  });
+
+  test('Verificar se os dois objetos são diferentes', () => {
+    expect(obj1).not.toEqual(obj3);
+  });
+})
+
+describe('ex11', () => {
+  test('Testa se função retorna true quando parametros forem 10 e 5', () => {
+    expect(ex11(10, 5)).toEqual(true);
+  });
+
+  test('Testa se a função retorna false quando parametros forem 5 e 10', () => {
+    expect(ex11(5, 10)).toEqual(false);
+  });
+})

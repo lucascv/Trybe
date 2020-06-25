@@ -35,3 +35,5 @@ assert.equal(myFizzBuzz(8), 8);
 // 5- Faça uma chamada com um parâmetro que não é um número e verifique se o retorno é o esperado
 
 assert.equal(myFizzBuzz('teste'), false);
+
+module.exports = myFizzBuzz

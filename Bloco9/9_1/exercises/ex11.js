@@ -11,3 +11,5 @@ function isAbove(num1, num2) {
 
 assert.equal(isAbove(10, 5), true);
 assert.equal(isAbove(5, 10), false);
+
+module.exports = isAbove

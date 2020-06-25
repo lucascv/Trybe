@@ -21,3 +21,9 @@ const obj3 = {
 
 assert.deepStrictEqual(obj1, obj2);
 assert.notDeepStrictEqual(obj1, obj3);
+
+module.exports = {
+  obj1,
+  obj2,
+  obj3,
+}

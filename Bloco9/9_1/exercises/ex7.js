@@ -7,3 +7,5 @@ const thereIs = '';
 // implemente seus testes aqui
 
 assert.equal(typeof(thereIs), 'string');
+
+module.exports = thereIs
