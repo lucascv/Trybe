@@ -30,3 +30,5 @@ assert.deepEqual(myRemove([1, 2, 3, 4], 5), [1, 2, 3, 4]);
 // 4- Verifique se a chamada myRemove([1, 2, 3, 4], 5) retorna o array esperado
 
 assert.deepEqual(myRemove([1, 2, 3, 4], 5), [1, 2, 3, 4]);
+
+module.exports = myRemove
