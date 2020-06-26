@@ -16,12 +16,14 @@ function palindrome(str) {
     reverseWord.push(str[(str.length - 1) - i]);
   }
 
-  if (word == reverseWord) {
-    return true;
+  let dif = false;
+  for (let i = 0; i < word.length; i += 1) {
+    if (word[i] !== reverseWord[i]) {
+      dif = true;
+    }
   }
-  else {
-    return false;
-  }
+
+  return dif;
 }
 
 module.exports = palindrome;
