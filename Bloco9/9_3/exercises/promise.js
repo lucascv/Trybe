@@ -46,8 +46,6 @@ new Promise((resolve, reject) => {
   else reject(console.log('Erro!'));
 })
 
-*/
-
 // 4- Quando a Promise for rejeitada, imprima, via console.log, a frase “É mais de oito mil! 
 // Essa promise deve estar quebrada!”
 
@@ -59,6 +57,26 @@ new Promise((resolve, reject) => {
     const arr3 = [2, 3, 5, 10];
     const resultado = arr3.map(num => num = sum / num);
     resolve(console.log(resultado));
+  }  
+  else reject(console.log("É mais de oito mil! Essa promise deve estar quebrada!"));
+})
+
+*/
+
+// 5- Quando a Promise for bem-sucedida, encadeie nela uma segunda Promise que some os 
+// elementos do array.
+
+new Promise((resolve, reject) => {
+  const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  const arr2 = arr.map(num => num = Math.floor(Math.random() * 50) ** 2);
+  const sum = arr2.reduce((a, b) => a + b);
+  if (sum < 8000) {
+    const arr3 = [2, 3, 5, 10];
+    const resultado = arr3.map(num => num = sum / num);
+    resolve(new Promise((resolve, reject) => {
+      const sum2 = resultado.reduce((a, b) => a + b);
+      resolve(console.log(sum2));
+    }));
   }  
   else reject(console.log("É mais de oito mil! Essa promise deve estar quebrada!"));
 })
