@@ -13,14 +13,14 @@ white_check_mark Módulo 2:
 2.1 - Git & GitHub - O que é e para que serve
 2.2 - Git & GitHub - Entendendo os comandos
 2.3 - Internet - Entendendo como ela funciona
-white_check_mark Módulo 3:
+x Módulo 3:
 3.1 - Introdução - HTML & CSS
 3.1 - HTML & CSS - Estruturas de página
 3.2 - HTML & CSS - Primeiros passos em CSS
 3.3 - HTML & CSS - Seletores e posicionamento
 3.4 - HTML Semântico
 3.5 - Projeto - HTML & CSS
-white_check_mark Módulo 4:
+x Módulo 4:
 4.1 - Introdução - JavaScript
 4.1 - JavaScript - Primeiros passos
 4.2 - JavaScript - Array e loop For
@@ -30,7 +30,7 @@ white_check_mark Módulo 4:
 4.6 - JavaScript - Trabalhando com elementos
 4.7 - JavaScript - Eventos
 4.8 - JavaScript - Web Storage
-white_check_mark Módulo 5:
+x Módulo 5:
 5.1 - Introdução - JavaScript - Projetos
 5.1 - Projeto - Meme Generator
 5.1 - Projeto - Arte com Pixels
