@@ -36,7 +36,7 @@ O programa conta com mais de 1.500 horas aulas presenciais e online e aborda int
 <li>3.2 - HTML & CSS - Primeiros passos em CSS</li>
 <li>3.3 - HTML & CSS - Seletores e posicionamento</li>
 <li>3.4 - HTML Semântico</li>
-<li>3.5 - Projeto - HTML & CSS</li>
+<li><a href="https://lucascv.github.io/html-css" rel="nofollow">3.5 - Projeto - HTML & CSS</a></li>
 </ul>
 
 #### Bloco 4: Introdução - JavaScript ✅
@@ -57,9 +57,9 @@ O programa conta com mais de 1.500 horas aulas presenciais e online e aborda int
 
 <ul>
 <li>5.1 - Introdução - JavaScript - Projetos</li>
-<li>5.1 - Projeto - Meme Generator</li>
-<li>5.1 - Projeto - Arte com Pixels</li>
-<li>5.1 - Projeto - Lista de tarefas</li>
+<li><a href="https://lucascv.github.io/meme-generator" rel="nofollow">5.1 - Projeto - Meme Generator</a></li>
+<li><a href="https://lucascv.github.io/make-me-an-artist" rel="nofollow">5.1 - Projeto - Arte com Pixels</a></li>
+<li><a href="https://lucascv.github.io/todo-list" rel="nofollow">5.1 - Projeto - Lista de tarefas</a></li>
 </ul>
 
 ## Desenvolvimento Front-end
@@ -74,7 +74,7 @@ O programa conta com mais de 1.500 horas aulas presenciais e online e aborda int
 <li>6.3 - CSS Flexbox - Parte 1</li>
 <li>6.4 - CSS Flexbox - Parte 2</li>
 <li>6.5 - CSS Responsivo - Mobile First</li>
-<li>6.6 - Projeto - Página inicial do Facebook</li>
+<li><a href="https://lucascv.github.io/signup-facebook" rel="nofollow">6.6 - Projeto - Página inicial do Facebook</a></li>
 </ul>
 
 #### Bloco 7: JavaScript ES6 ✅
@@ -84,7 +84,7 @@ O programa conta com mais de 1.500 horas aulas presenciais e online e aborda int
 <li>7.2 - JavaScript ES6 - Objects</li>
 <li>7.3 - Testes unitários em JavaScript</li>
 <li>7.4 - Testando em pequenos passos</li>
-<li>7.5 - Projeto - JavaScript Testes Unitários</li>
+<li><a href="https://github.com/lucascv/Trybe/tree/master/Bloco7/Projeto" rel="nofollow">7.5 - Projeto - JavaScript Testes Unitários</a></li>
 </ul>
 
 #### Bloco 8: Javascript Higher Order Functions (HOF's) ✅
@@ -93,7 +93,7 @@ O programa conta com mais de 1.500 horas aulas presenciais e online e aborda int
 <li>8.1 - JavaScript ES6 - Higher Order Functions - forEach, find, filter, some, every, sort</li>
 <li>8.2 - JavaScript ES6 - Higher Order Functions - map e reduce</li>
 <li>8.3 - JavaScript ES6 - Spread operator, parâmetro rest, destructuring e mais</li>
-<li>8.4 - Projeto - Zoo functions</li>
+<li><a href="https://github.com/lucascv/Trybe/tree/master/Bloco8/Projeto" rel="nofollow">8.4 - Projeto - Zoo functions</a></li>
 </ul>
 
 #### Bloco 9: Jest, Javascript assíncrono, callbacks and promises ✅
@@ -102,6 +102,6 @@ O programa conta com mais de 1.500 horas aulas presenciais e online e aborda int
 <li>9.1 - Primeiros passos no Jest</li>
 <li>9.2 - JavaScript Assíncrono e Callbacks</li>
 <li>9.3 - JavaScript Promises</li>
-<li>9.4 - Projeto - Carrinho de compras</li>
+<li><a href="https://lucascv.github.io/shopping-cart" rel="nofollow">9.4 - Projeto - Carrinho de compras</a></li>
 </ul>
 
