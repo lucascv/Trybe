@@ -7,7 +7,7 @@ const uppercase = (str, callback) => {
 }
 
 describe('exercicio 10-1', () => {
-  test('oitdbem = OITDBEM', (done) => {
+  test('Testando se função retorna o esperado', (done) => {
     uppercase('teste', (callback) => {
       expect(callback).toBe('TESTE');
       done();
