@@ -8,8 +8,8 @@ const uppercase = (str, callback) => {
 
 describe('exercicio 10-1', () => {
   test('oitdbem = OITDBEM', (done) => {
-    uppercase('oitdbem', (callback) => {
-      expect(callback).toBe('OITDBEM');
+    uppercase('teste', (callback) => {
+      expect(callback).toBe('TESTE');
       done();
     });
   });
