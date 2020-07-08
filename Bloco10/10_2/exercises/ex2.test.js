@@ -11,4 +11,4 @@ test('Ex2', () => {
 
   expect(math.randomNumber(4, 2)).toBe(2);
   expect(math.randomNumber).toHaveBeenCalledTimes(1);
-})
+});
