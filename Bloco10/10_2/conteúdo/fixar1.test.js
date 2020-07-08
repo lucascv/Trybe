@@ -41,6 +41,6 @@ test('Fixar 3', () => {
   expect(isDivisible(2)).toBe(true);  // Primeira chamada pega o 60
   expect(isDivisible(1)).toBe(true);  // Segunda chamada pega o 33
   expect(isDivisible(1)).toBe(false);  // Terceira chamada pega o default
-  expect(isDivisible(1)).toBe(false);  // Parece que após acabarem as opções se mantem a ultima definida
+  expect(isDivisible(1)).toBe(false);  // Parece que após acabarem as opções sempre retorna false
 })
 
