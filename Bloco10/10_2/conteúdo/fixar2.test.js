@@ -2,6 +2,7 @@ const math = require('./fixar2');
 
 // 1- Faça o mock da funcão subtrair e teste sua chamada.
 
+/*
 test('Teste função subtrair', () => {
   math.subtrair = jest.fn();
 
@@ -9,6 +10,7 @@ test('Teste função subtrair', () => {
 
   expect(math.subtrair).toHaveBeenCalled();
 });
+*/
 
 // 2- Faça o mock da função multiplicar e implemente como retorno padrão o valor '10'. 
 // Teste a chamada e o retorno.
@@ -54,5 +56,23 @@ test('Teste da função dividir', () => {
   expect(math.dividir()).toBe(15);
   expect(math.dividir).toHaveBeenCalledTimes(3);
 
-})
+});
+
+// 5- Faça o mock da função subtrair de maneira que seja possível restaurar sua implementação 
+// original. Defina como retorno padrão o valor '20'. Teste o número de chamadas e o retorno. 
+// Restaure a implementação original da função e teste sua execução.
+
+test('Teste da função subtrair', () => {
+  const mockSubtrair = jest
+    .spyOn(math, "subtrair")
+    .mockReturnValue(20);
+  
+  math.subtrair(5, 1);
+  expect(mockSubtrair).toHaveBeenCalledTimes(1);
+  expect(mockSubtrair(5, 1)).toBe(20);
+  expect(mockSubtrair).toHaveBeenCalledTimes(2);
+
+  math.subtrair.mockRestore();
+  expect(math.subtrair(5, 1)).toBe(4);
+});
 
