@@ -22,4 +22,17 @@ test('Teste da função multiplicar', () => {
 
   expect(math.multiplicar).toHaveBeenCalled();
   expect(math.multiplicar()).toBe(10);
+});
+
+// 3- Faça o mock da função somar e implemente uma função que recebe dois valores e 
+// retorna sua soma. Teste a chamada, o retorno e os parâmetros passados.
+
+test('Teste da função somar', () => {
+  math.somar = jest
+    .fn()
+    .mockImplementation((a, b) => a + b);
+  
+  expect(math.somar(1, 2)).toBe(3);
+  expect(math.somar).toHaveBeenCalled();
+  expect(math.somar).toHaveBeenLastCalledWith(1, 2);
 })
