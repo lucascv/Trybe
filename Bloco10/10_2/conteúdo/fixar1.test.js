@@ -27,3 +27,20 @@ test('Quando random retorna par e isDivisible recebe o número 2 o resultado é 
   expect(isDivisible(2)).toBe(true);
 })
 
+// 3- Simule (mocke) dois valores para a função randomNumber() retornar e um terceiro valor default.
+//  Chame a função isDivisible() quatro vezes num mesmo teste e cheque que os retornos são conforme 
+// esperado.
+
+test('Fixar 3', () => {
+  numeroAleatorio = jest
+    .fn()
+    .mockReturnValueOnce(60)
+    .mockReturnValueOnce(33)
+    .mockReturnValueOnce('default value');
+
+  expect(isDivisible(2)).toBe(true);  // Primeira chamada pega o 60
+  expect(isDivisible(1)).toBe(true);  // Segunda chamada pega o 33
+  expect(isDivisible(1)).toBe(false);  // Terceira chamada pega o default
+  expect(isDivisible(1)).toBe(false);  // Parece que após acabarem as opções se mantem a ultima definida
+})
+
