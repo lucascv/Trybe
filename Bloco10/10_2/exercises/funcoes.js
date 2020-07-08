@@ -6,4 +6,4 @@ const firstWord = string => string[0];
 
 const sumStrings = (string1, string2) => string1 + string2;
 
-module.exports = { randomNumber, uppercase, firstWord, sumStrings }
+module.exports = { randomNumber, uppercase, firstWord, sumStrings };
