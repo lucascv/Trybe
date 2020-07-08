@@ -4,6 +4,7 @@
 // 'sd-01-week4-5-project-meme-generator' se encontram nessa lista.
 
 const lib = require('./funcoes');
+const fetch = require('node-fetch');
 const API_URL = 'https://api.github.com/users/tryber/repos';
 
 test('Testando se função retorna o esperado', async () => {
