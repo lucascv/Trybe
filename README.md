@@ -113,7 +113,14 @@ O programa conta com mais de 1.500 horas aulas presenciais e online e aborda int
 <li><a href="https://github.com/lucascv/Trybe/tree/master/Bloco10/Projeto" rel="nofollow">10.3 - Projeto - Jest Assíncrono e Mocking</a></li>
 </ul>
 
-#### Bloco 11: Introduction - React
+#### Bloco 11: Introduction - React ✅
+
+<ul>
+<li>11.1 - Introdução - React</li>
+<li>11.1 - 'Hello World!' no React!</li>
+<li>11.2 - Componentes React</li>
+<li><a href="https://github.com/lucascv/Trybe/tree/master/Bloco11/Projeto" rel="nofollow">11.3 - Projeto - Movie Cards Library</a></li>
+</ul>
 
 #### Bloco 12: React
  12-1: Components with status
