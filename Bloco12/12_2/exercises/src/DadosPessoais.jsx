@@ -9,11 +9,13 @@ class DadosPessoais extends React.Component {
       email: '',
       cpf: '',
       endereco: '',
+      cidade: '',
       formErrors: { 
         email: '',
         name: '',
         cpf: '',
         endereco: '',
+        cidade: '',
       },
     }
   }
@@ -42,9 +44,16 @@ class DadosPessoais extends React.Component {
         return '';
       case 'endereco':
         return '';
+      case 'cidade':
+        return '';
       default:
         break;
     }
+  }
+
+  verificaCidade(event) {
+    const lista = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+    lista.forEach((numero) => numero === event.target.value[0] ? this.setState({ cidade: '' }) : console.log(event.target.value[0]));
   }
 
   render() {
@@ -95,6 +104,21 @@ class DadosPessoais extends React.Component {
                 type="text"
                 name="endereco"
                 maxLength="200"
+                value={this.state.endereco.replace(/[^\w\s]/gi, '')}
+                onChange={this.changeHandler}
+                required
+              />
+            </label>
+          </div>
+          <div>
+            <label htmlFor="cidade">
+              Cidade
+              <input
+                type="text"
+                maxLength="28"
+                name="cidade"
+                value={this.state.cidade}
+                onBlur={this.verificaCidade}
                 onChange={this.changeHandler}
                 required
               />
