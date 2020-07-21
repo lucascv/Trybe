@@ -22,6 +22,9 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={Home}/>
             <Route path="/about" component={About}/>
+            <Route path="/Users/:Id" render={
+              (props) => <Users {...props} greetingMessage='Good Morning' />
+            }/>
             <Route path="/users" render={
               (props) => <Users {...props} greetingMessage='Good Morning' />
             }/>
