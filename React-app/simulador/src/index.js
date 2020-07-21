@@ -3,13 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+
 import { BrowserRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 
 ReactDOM.render(
   <BrowserRouter>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
+    <Link to="/" > Home </Link>
+    <Link to="/about" > About </Link>
+    <Link to="/users" > Users </Link>
+    <App />
   </BrowserRouter>,
   document.getElementById('root')
 );
