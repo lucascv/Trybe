@@ -20,18 +20,18 @@ class App extends Component {
 
         <main>
           <Switch>
-            <Route exact path="/" component={Home}/>
-            <Route path="/about" component={About}/>
             <Route path="/Users/:Id" render={
               (props) => <Users {...props} greetingMessage='Good Morning' />
-            }/>
+            } />
             <Route path="/users" render={
               (props) => <Users {...props} greetingMessage='Good Morning' />
-            }/>
+            } />
+            <Route path="/about" component={About} />
+            <Route exact path="/" component={Home} />
           </Switch>
         </main>
 
-        
+
 
 
       </div>
