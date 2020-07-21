@@ -10,9 +10,6 @@ import { Link } from "react-router-dom";
 
 ReactDOM.render(
   <BrowserRouter>
-    <Link to="/" > Home </Link>
-    <Link to="/about" > About </Link>
-    <Link to="/users" > Users </Link>
     <App />
   </BrowserRouter>,
   document.getElementById('root')
