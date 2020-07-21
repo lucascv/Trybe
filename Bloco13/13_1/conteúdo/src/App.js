@@ -24,7 +24,7 @@ class App extends Component {
           <li>SUPIMPA</li>
           SUPIMPA 2.0 - Melhor palavra!
           <ShowButton changeTitle={this.changeTitle} value='Título Show' />
-          <Pictures src={'https://course.betrybe.com/images/logo_white.png'} alt={'Logo da Trybe'} height={200} legenda={'Lista feita na Trybe'}/>
+          <Pictures src={'https://course.betrybe.com/images/logo_white.png'} alt={'Logo da Trybe'} height={20} legenda={'Lista feita na Trybe'}/>
         </MyList>
       </div>
     )
