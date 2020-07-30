@@ -122,20 +122,26 @@ O programa conta com mais de 1.500 horas aulas presenciais e online e aborda int
 <li><a href="https://github.com/lucascv/Trybe/tree/master/Bloco11/Projeto" rel="nofollow">11.3 - Projeto - Movie Cards Library</a></li>
 </ul>
 
-#### Bloco 12: React
- 12-1: Components with status
- 12-2: React events and forms
- 12-3: Project - Movie Cards Library Stateful
+#### Bloco 12: React ✅
+<ul>
+<li>12.1 - Componentes com estado</li>
+<li>12.2 - Eventos e formulários no React</li>
+<li><a href="https://github.com/lucascv/Trybe/tree/master/Bloco12/Projeto" rel="nofollow">12.3 - Projeto - Movie Cards Library Stateful</a></li>
+</ul>
 
-#### Block 13: React
- 13-1: Improving component reuse: props.children and PropTypes
- 13-2: React component life cycle
- 13-3: React Router
- 13-4: Project - Movie Cards Library CRUD
+#### Block 13: React ✅
+<ul>
+<li>13.1 - Melhorando o reuso de componentes: props.children e PropTypes</li>
+<li>13.2 - Ciclo de vida de componentes em React</li>
+<li>13.3 - React Router</li>
+<li><a href="https://github.com/lucascv/Trybe/tree/master/Bloco13/Projeto" rel="nofollow">13.4 - Projeto - Movie Cards Library CRUD</a></li>
+</ul>
 
-#### Block 14: Agile Methodologies
- 14-1: Agile Methodologies
- 14-2: Project - Frontend Online Store
+#### Block 14: Agile Methodologies ✅
+<ul>
+<li>14.1 - Metodologias Ágeis</li>
+<li><a href="https://github.com/lucascv/Trybe/tree/master/Bloco14/Projeto" rel="nofollow">14.2 - Projeto - Frontend Online Store</a></li>
+</ul>
 
 #### Block 15: React
  15-1: Testing React with the React Testing Library
