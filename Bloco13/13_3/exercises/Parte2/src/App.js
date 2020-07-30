@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
-import { BrowserRouter } from "react-router-dom";
-import Pokedex from './Pokedex';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Pokedex from './components/Pokedex';
 
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
-        <Pokedex />
-      </BrowserRouter>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Pokedex}/>
+        </Switch>
+      </Router>
     );
   }
 }
