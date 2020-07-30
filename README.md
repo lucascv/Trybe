@@ -129,7 +129,7 @@ O programa conta com mais de 1.500 horas aulas presenciais e online e aborda int
 <li><a href="https://github.com/lucascv/Trybe/tree/master/Bloco12/Projeto" rel="nofollow">12.3 - Projeto - Movie Cards Library Stateful</a></li>
 </ul>
 
-#### Block 13: React ✅
+#### Bloco 13: React ✅
 <ul>
 <li>13.1 - Melhorando o reuso de componentes: props.children e PropTypes</li>
 <li>13.2 - Ciclo de vida de componentes em React</li>
@@ -137,7 +137,7 @@ O programa conta com mais de 1.500 horas aulas presenciais e online e aborda int
 <li><a href="https://github.com/lucascv/Trybe/tree/master/Bloco13/Projeto" rel="nofollow">13.4 - Projeto - Movie Cards Library CRUD</a></li>
 </ul>
 
-#### Block 14: Agile Methodologies ✅
+#### Bloco 14: Agile Methodologies ✅
 <ul>
 <li>14.1 - Metodologias Ágeis</li>
 <li><a href="https://github.com/lucascv/Trybe/tree/master/Bloco14/Projeto" rel="nofollow">14.2 - Projeto - Frontend Online Store</a></li>
