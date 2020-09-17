@@ -62,7 +62,7 @@ O programa conta com mais de 1.500 horas aulas presenciais e online e aborda int
 <li><a href="https://lucascv.github.io/todo-list" rel="nofollow">5.1 - Projeto - Lista de tarefas</a></li>
 </ul>
 
-## Desenvolvimento Front-end
+## Desenvolvimento Front-end ✅
 
 #### Bloco 6: Introdução - Front-end ✅
 
@@ -143,29 +143,38 @@ O programa conta com mais de 1.500 horas aulas presenciais e online e aborda int
 <li><a href="https://github.com/lucascv/Trybe/tree/master/Bloco14/Projeto" rel="nofollow">14.2 - Projeto - Frontend Online Store</a></li>
 </ul>
 
-#### Block 15: React
- 15-1: Testing React with the React Testing Library
- 15-2: Testing React with the React Testing Library - Part 2
- 15-3: Project - React Tests
+#### Block 15: React ✅
+<ul>
+<li>15-1: Testing React with the React Testing Library</li>
+<li>15-2: Testing React with the React Testing Library - Part 2</li>
+<li>15-3: Project - React Tests</li>
+</ul>
 
-#### Block 16: React
- 16-1: Introduction to Redux
- 16-2: React with Redux - part 1
- 16-3: React with Redux - part 2
- 16-4: Project - Table with data filters
+#### Block 16: React ✅
+<ul>
+<li>16-1: Introduction to Redux</li>
+<li>16-2: React with Redux - part 1</li>
+<li>16-3: React with Redux - part 2</li>
+<li>16-4: Project - Table with data filters</li>
+</ul>
 
-#### Block 17: React
- 17-1: Project - Trivia Game
+#### Block 17: React ✅
+<ul>
+<li>17-1: Project - Trivia Game</li>
+</ul>
 
-#### Block 18: React & Redux
- 18-1: React Context API
- 18-2: React Hooks - useState and useContext
- 18-3: React Hooks - useEffect and custom Hooks
- 18-4: Project - Datatable StarWars with Context API and Hooks
+#### Block 18: React & Redux ✅
+<ul>
+<li>18-1: React Context API</li>
+<li>18-2: React Hooks - useState and useContext</li>
+<li>18-3: React Hooks - useEffect and custom Hooks</li>
+<li>18-4: Project - Datatable StarWars with Context API and Hooks</li>
+</ul>
 
-#### Block 19: Final Front-end Project
- 19-1: Project - Recipe App
-
+#### Block 19: Final Front-end Project ✅
+<ul>
+<li>19-1: Project - Recipe App</li>
+</ul>
 
 ## Back-end development
 
